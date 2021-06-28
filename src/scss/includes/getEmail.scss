@@ -1,0 +1,48 @@
+.getEmail{
+    border-radius: 44px;
+    background: rgba(243, 249, 255, 1);
+    width: 440px;
+    height: 48px;
+    box-sizing: border-box;
+}
+.getEmail__start{
+    display: grid;
+    align-items: center;
+}
+.getEmail__input{
+    box-sizing: border-box;
+    outline: none;
+    height: 48px;
+    width: 270px;
+    border: none;
+    border-radius: 44px;
+    padding-left: 30px;
+    &::placeholder{
+        color: transparent;
+    }
+    // &:focus + .getEmail__label{
+    //         transition: 1s;
+    //         color: transparent;
+    //     }
+}
+.getEmail__label{
+    position: absolute;
+    left: 0px;
+    padding-top: 18px;
+    padding-left: 30px;
+}
+.GetEmail__button{
+    width: 161px;
+    height: 48px;
+    background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+    border-radius: 44px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    &:hover{
+        box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    }
+}
+
+.get-block__end{
+    display: none;
+}
