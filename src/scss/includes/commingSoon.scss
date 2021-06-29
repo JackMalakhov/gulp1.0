@@ -1,0 +1,8 @@
+.main__twoColls{
+    align-items: start;
+}
+.commingSoon__article{
+    .main__twoColls{
+        grid-template-columns: 3vw 1fr;
+    }
+}

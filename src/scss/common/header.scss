@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+
+.page__header{
+    z-index: 9000;
+    position: fixed;
+    width: 100vw;
+    background-color: $back-color;
+    
+}
+.header__menu{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 35px 170px 35px 170px;
+}
+.nav{
+    .nav__link{
+        transition: 0.3s;
+        color: $text-color__link;
+        &:hover{
+            transition: 0.3s;
+            color: $text-color__link-hover;
+        }
+        &:active{
+            transition: 0.3s;
+            color: $text-color__link-active;
+        }
+    }
+}
+button{
+    width: 175px;
+    height: 48px;
+    border-radius: 44px;
+}
+.header__button{
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $blue;
+    transition: all .3s ease;
+    &:hover{
+        box-shadow: $shadow;
+    }
+}

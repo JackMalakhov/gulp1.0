@@ -1,17 +1,21 @@
+@import '../common/variables.scss';
+
 .getEmail{
     border-radius: 44px;
-    background: rgba(243, 249, 255, 1);
+    background: $highlight-white;
     width: 440px;
     height: 48px;
     box-sizing: border-box;
 }
 .getEmail__start{
+    position: relative;
     display: grid;
     align-items: center;
 }
 .getEmail__input{
     box-sizing: border-box;
     outline: none;
+    background-color: $input-white;
     height: 48px;
     width: 270px;
     border: none;
@@ -20,29 +24,26 @@
     &::placeholder{
         color: transparent;
     }
-    // &:focus + .getEmail__label{
-    //         transition: 1s;
-    //         color: transparent;
-    //     }
 }
 .getEmail__label{
     position: absolute;
     left: 0px;
     padding-top: 18px;
     padding-left: 30px;
+    color: $text-blue;
 }
-.GetEmail__button{
+.getEmail__button{
     width: 161px;
     height: 48px;
-    background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+    background: $gradient-blue;
     border-radius: 44px;
     border: none;
-    color: rgba(255, 255, 255, 1);
+    color: $highlight-white;
     &:hover{
-        box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+        box-shadow: $shadow;
     }
 }
 
-.get-block__end{
+.getEmail__done{
     display: none;
 }

@@ -1,0 +1,45 @@
+//pallete
+
+$white: #FFFFFF;
+$highlight-white: rgba(243, 249, 255, 1);
+$abhl-white:#E8F4F7;
+$input-white: #F3F9FF;
+
+
+$blue: rgba(23, 146, 199, 1);
+$transparency-blue:rgba(56, 152, 254, 0.5);
+$gradient-blue: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+$border-blue: rgba(56, 152, 254, 0.1875);
+$text-blue:#1792C7;
+$policy-blue: rgba(0, 184, 240, 1);
+
+
+
+$dark-grey: #2D3238;
+$grey: #555E68;
+$light-grey:rgba(85, 94, 104, 0.5);
+
+//variables
+
+$back-color: $white;
+$back-color__button:$gradient-blue;
+$back-color__autobiz:$abhl-white;
+$back-color__footer:$highlight-white;
+$back-color__cases-hover:$highlight-white;
+
+
+$text-color: $dark-grey;
+$text-color__link: $grey;
+$text-color__link-hover: $light-grey;
+$text-color__link-active: $text-blue;
+$text-color__button: $white;
+$text-color__header-highlight:$gradient-blue;
+$text-color__input-label:$text-blue;
+$text-color__policy:$policy-blue;
+
+$shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+
+//media
+$pc: 1440px;
+$tablet: 768px;
+$phone: 500px;

@@ -10,8 +10,9 @@ function inputCheck(a){
 
     if (getInput.value.length != ""){
         getlabel.style.color = 'transparent';
+        
     }
     else{
-        getlabel.style.color = 'blue'
+        getlabel.style.color = '#1792C7'
     }
 }

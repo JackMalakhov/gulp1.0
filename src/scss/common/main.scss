@@ -1,6 +1,24 @@
 @import '../includes/getEmail';
-$red: rgb(81, 110, 240);
-body{
-    background-color: $red;
-    // display: flex;
+@import '../includes/offer.scss';
+@import '../includes/auto-biz.scss';
+@import '../includes/how-it-works.scss';
+@import '../includes/cases.scss';
+@import '../includes/commingSoon.scss';
+
+.page__main{
+    width: 75%;
+    margin: 0 auto;
 }
+
+.main__twoColls{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+}
+.main__threeColls{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+}
+

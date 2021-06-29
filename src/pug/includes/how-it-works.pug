@@ -1,13 +1,8 @@
 section.main__HIW.HIW 
-    ul
-        h2 Как это работает       
-        li 
-            img(src="", alt="pic")
-            p Подключите свой банковский счет
-        li 
-            img(src="", alt="pic")
-            p Выберите, куда и кому отправлять информацию
-        li 
-            img(src="", alt="pic")
-            p Получайте информацию о поступивших оплатах
+    h2 Как это работает 
+    ul.main__threeColls      
+        each index, value in {'Подключите свой банковский счет':"step1","Выберите, куда и кому отправлять информацию":"step2","Получайте информацию о поступивших оплатах":"step3"} 
+            li.HIW__item
+                img(src="./images/"+index+".svg", alt=index)
+                p= value
         

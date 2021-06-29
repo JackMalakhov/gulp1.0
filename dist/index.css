@@ -1,3 +1,46 @@
+.page__header {
+  z-index: 9000;
+  position: fixed;
+  width: 100vw;
+  background-color: #FFFFFF;
+}
+
+.header__menu {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 35px 170px 35px 170px;
+}
+
+.nav .nav__link {
+  transition: 0.3s;
+  color: #555E68;
+}
+.nav .nav__link:hover {
+  transition: 0.3s;
+  color: rgba(85, 94, 104, 0.5);
+}
+.nav .nav__link:active {
+  transition: 0.3s;
+  color: #1792C7;
+}
+
+button {
+  width: 175px;
+  height: 48px;
+  border-radius: 44px;
+}
+
+.header__button {
+  background-color: #FFFFFF;
+  color: #1792c7;
+  border: 1px solid #1792c7;
+  transition: all 0.3s ease;
+}
+.header__button:hover {
+  box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+}
+
 .getEmail {
   border-radius: 44px;
   background: #f3f9ff;
@@ -7,6 +50,7 @@
 }
 
 .getEmail__start {
+  position: relative;
   display: grid;
   align-items: center;
 }
@@ -14,6 +58,7 @@
 .getEmail__input {
   box-sizing: border-box;
   outline: none;
+  background-color: #F3F9FF;
   height: 48px;
   width: 270px;
   border: none;
@@ -29,24 +74,179 @@
   left: 0px;
   padding-top: 18px;
   padding-left: 30px;
+  color: #1792C7;
 }
 
-.GetEmail__button {
+.getEmail__button {
   width: 161px;
   height: 48px;
   background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
   border-radius: 44px;
   border: none;
-  color: white;
+  color: #f3f9ff;
 }
-.GetEmail__button:hover {
+.getEmail__button:hover {
   box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
 }
 
-.get-block__end {
+.getEmail__done {
   display: none;
 }
 
+.offer {
+  align-items: center;
+}
+
+.autoBiz {
+  padding: 10%;
+  background-color: #E8F4F7;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cases__body {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 2%;
+  width: 100%;
+  overflow: hidden;
+}
+.cases__body input[name=rad] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.cases__article {
+  width: 346px;
+  height: 297px;
+  border: 1px solid rgba(56, 152, 254, 0.187528);
+  transition: all 0.6s ease;
+}
+@media screen and (max-width: 768px) {
+  .cases__article {
+    width: 319px;
+    height: 287px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cases__article {
+    width: 222px;
+    height: 213px;
+  }
+}
+.cases__article:hover {
+  background-color: #f3f9ff;
+  border-bottom: 3px solid #1792C7;
+}
+
+.cases__item {
+  transition: all 0.3s ease;
+  padding: 10%;
+}
+@media screen and (max-width: 500px) {
+  .cases__item {
+    padding: 2%;
+  }
+}
+
+.cases__link {
+  color: #1792C7;
+}
+
+.cases__radio {
+  margin-top: 50px;
+  text-align: center;
+}
+.bar {
+  display: none;
+  transition: all 0.3s ease;
+  padding: 7px 16px;
+  margin: 13px;
+  border: 1px solid #1792c7;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .bar {
+    display: inline;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bar {
+    padding: 0px 10px;
+    margin: 8px;
+  }
+}
+.bar:active, .bar:hover {
+  background-color: #1792C7;
+}
+
+@media screen and (max-width: 768px) {
+  #r_0:checked ~ .cases__article {
+    transform: translateX(0%);
+  }
+
+  #r_1:checked ~ .cases__article {
+    transform: translateX(-50%);
+  }
+
+  #r_2:checked ~ .cases__article {
+    transform: translateX(-105%);
+  }
+
+  #r_3:checked ~ .cases__article {
+    transform: translateX(-160%);
+  }
+
+  #r_4:checked ~ .cases__article {
+    transform: translateX(-204%);
+  }
+}
+.main__twoColls {
+  align-items: start;
+}
+
+.commingSoon__article .main__twoColls {
+  grid-template-columns: 3vw 1fr;
+}
+
+.page__main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main__twoColls {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5%;
+}
+
+.main__threeColls {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #516ef0;
+  margin: 0;
+  color: #2D3238;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }

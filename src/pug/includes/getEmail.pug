@@ -2,11 +2,13 @@ mixin getEmail(formNumber)
     //- script(src=("../../js/check.js"))
     .getEmail
         .getEmail__start(id='start__'+formNumber)
-            form(action="", method="get" onsubmit="getEmail("+"'"+formNumber+"'"+");"+" return false;")
+            form(action="#", method="get" onsubmit="getEmail("+"'"+formNumber+"'"+");"+" return false;")
                 input.getEmail__input(id="email__" + formNumber)( required, type="email", name="email" + formNumber placeholder="Введите email" oninput="inputCheck("+"'"+formNumber+"'"+");")
                 label.getEmail__label(id="label__"+formNumber for="email__" + formNumber) Введите email
-                input.GetEmail__button(type="submit", value="Узнать")
+                input.getEmail__button(type="submit", value="Узнать")
             
-        .getEmail__end(id='end__'+formNumber)
-            p thanks
+        .getEmail__done(id='end__'+formNumber)
+            
+            p Проверьте e-mail!
+            img(src="./images/done.svg", alt="done! ") 
         
