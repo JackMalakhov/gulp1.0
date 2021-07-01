@@ -1,0 +1,109 @@
+@import '../common/variables.scss';
+.page__footer{
+    background-color: $highlight-white;
+    padding: 80px 0 110px 0;
+}
+.footer__section{
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-areas: "f-name f-name" "f-info f-body" "f-date f-policy";
+    @media screen and (max-width:$tablet) {
+        grid-template-areas: "f-name f-name" "f-info f-info" "f-body f-body" "f-date f-policy" ;
+    }
+    @media screen and (max-width:$phone) {
+        grid-template-areas: "f-name" "f-info" "f-body" "f-policy" "f-date";
+    }
+}
+.footer__name{
+    grid-area: f-name;
+}
+.footer__info{
+    grid-area: f-info;
+}
+
+.footer__body{
+    grid-area: f-body;
+    // margin-bottom: 40px;
+}
+.footer__date{
+    grid-area: f-date;
+
+    justify-self: start;
+    align-self: end;
+    @media screen and (max-width:$phone) {
+    justify-self: center;        
+    }
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+}
+.footer__policy{
+    grid-area:f-policy;
+
+    justify-self: end;
+    align-self: end;
+    @media screen and (max-width:$phone) {
+    justify-self: center;        
+    }
+    color:$policy-blue;
+}
+
+
+.footer__end{
+    display: none;   
+}
+.footer__item{
+    position: relative;
+}
+.footer__label{
+    position: absolute;
+    left:15px;
+    top: 15px;
+    color: $blue
+}
+.footer__input{
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    height: 43px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    
+    border-radius: 40px;
+    border: 1px solid rgba(56, 152, 254, 0.4);
+    
+}
+.footer__textarea{
+    width: 100%;
+    height: 68px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgba(56, 152, 254, 0.4);
+    outline: none;
+    resize: none;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.footer__button{
+    width: 175px;
+    background: $gradient-blue;
+    color: $highlight-white;
+}
+// .footer__policy{
+//     align-items: center;
+// }
+
+
+// .policy__c{
+//     font-family: Montserrat;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 8px;
+//     line-height: 10px;
+// }
+.info__email{
+    color: $transparency-blue-3
+}

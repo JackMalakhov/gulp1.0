@@ -12,33 +12,23 @@
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    padding: 35px 170px 35px 170px;
+    padding: 35px 170px;
 }
 .nav{
     .nav__link{
-        transition: 0.3s;
+        transition: all 0.3s ease;
         color: $text-color__link;
         &:hover{
-            transition: 0.3s;
             color: $text-color__link-hover;
         }
         &:active{
-            transition: 0.3s;
             color: $text-color__link-active;
         }
     }
 }
-button{
-    width: 175px;
-    height: 48px;
-    border-radius: 44px;
-}
 .header__button{
+    width: 175px;
     background-color: $white;
     color: $blue;
     border: 1px solid $blue;
-    transition: all .3s ease;
-    &:hover{
-        box-shadow: $shadow;
-    }
 }

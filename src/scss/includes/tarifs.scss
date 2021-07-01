@@ -1,0 +1,29 @@
+@import '../common/variables.scss';
+.tarifs{
+    display: grid;
+
+    .getEmail{
+        grid-area: t-get;
+    }
+
+    grid-template-areas: "t-name t-img" "t-cont t-img" "t-get t-img";
+    @media screen and(max-width:$tablet) {
+        grid-template-areas: "t-name t-name" "t-cont t-img" "t-get t-get";
+    }
+    @media screen and(max-width:$phone) {
+        grid-template-areas: "t-img" "t-name" "t-cont" "t-get";
+    }
+}
+
+.tarifs__name{
+    grid-area: t-name;
+}
+
+.tarifs__content{
+    grid-area: t-cont;
+}
+
+.tarifs__img{
+    grid-area: t-img;
+    width: 100%;
+}

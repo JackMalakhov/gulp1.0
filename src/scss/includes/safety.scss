@@ -1,0 +1,21 @@
+.safety{
+    display: grid;
+    grid-template-areas: "s-img s-name" "s-img s-cont";
+    grid-template-rows: min-content 1fr;
+    @media screen and (max-width:$tablet) {
+        grid-template-areas: "s-name s-name" "s-img s-cont";
+    }
+    @media screen and (max-width:$phone) {
+        grid-template-areas: "s-name" "s-cont" "s-img";
+    }
+}
+
+.safety__name{
+    grid-area: s-name;
+}
+.safety__img{
+    grid-area: s-img;
+}
+.safety__content{
+    grid-area: s-cont;
+}

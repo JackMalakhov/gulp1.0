@@ -1,2 +1,25 @@
 footer.page__footer.footer
-    p footer
+    section.footer__section 
+        h2.footer__name Подключиться
+        .footer__info.info 
+            p Хотите начать пользоваться системой? Напишите нам.
+            p.info__email email
+            p hello@everypay.io
+        .footer__body 
+            .footer__getInfo(id="start__f")
+                form.footer__form(action="#", method="get" onsubmit="getEmail('f');"+" return false;") 
+                    .footer__item
+                        input.footer__input#input__f1(type="text", name="footer__name" required oninput="inputCheck('f1');")
+                        label.footer__label#label__f1(for="input__f1") Ваше имя*
+                    .footer__item
+                        input.footer__input#input__f2(type="email", name="footer__email" required oninput="inputCheck('f2');")
+                        label.footer__label#label__f2(for="input__f2") Email*
+                    .footer__item
+                        textarea.footer__textarea#input__f3(name="Footer__about", cols="30", rows="10" required oninput="inputCheck('f3');")
+                        label.footer__label#label__f3(for="input__f3") Расскажите о своей компании*
+                    input.footer__button(type="submit", value="Подключиться")
+            .footer__end(id="end__f") 
+                p Спасибо! <br> Мы приняли ваш запрос.
+                p В ближайшее время наш специалист поддержки свяжется с вами.
+        p.footer__date © 2020, Everypay
+        a.footer__policy(href="#") Политика конфиденциальности 

@@ -1,0 +1,40 @@
+-var aName = ["Не пропускайте важные оплаты","Сократите издержки на бухгалтерию и коммуникации","Создавайте собственные сценарии действий","Реагируйте на платежи так быстро, как они поступают на ваш счет"] 
+-var aContent = ["Если от них зависят ваши проекты или старт рекламных кампаний","Получайте информацию о платежах на счет компании там, где вам удобно","при поступлении денег на счет вашей компании",""]
+-var aImg = ["../images/asset__money.svg","../images/asset__pig.svg","../images/asset__table.svg","../images/asset__notifications.svg"]
+mixin showCard(cardNumber)
+    article.page__twoColls.aside__card.card
+        .card__body
+            h2= aName[cardNumber]
+            p= aContent[cardNumber]
+            +getEmail("a"+cardNumber)
+        img(src=aImg[cardNumber], alt="pic")
+        
+aside.main__aside.aside
+    .aside__bigScreen
+        +showCard("0")
+        +showCard("1")
+        +showCard("2")
+        +showCard("3")
+    .aside__slider
+        .aside__card#asideInfo(onclick = ("asideSlider();"))
+            .aside__box
+                h2= aName[0]
+                p= aContent[0]
+            .aside__box
+                h2= aName[1]
+                p= aContent[1]
+            .aside__box
+                h2= aName[2]
+                p= aContent[2]
+            .aside__box
+                h2= aName[3]
+        +getEmail("a4")
+        .aside__card#asideImg(onclick = ("asideSlider();"))
+            .aside__box 
+                img(src=aImg[0], alt="")
+            .aside__box 
+                img(src=aImg[1], alt="")
+            .aside__box 
+                img(src=aImg[2], alt="")
+            .aside__box 
+                img(src=aImg[3], alt="")

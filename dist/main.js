@@ -16,3 +16,22 @@ function inputCheck(a){
         getlabel.style.color = '#1792C7'
     }
 }
+
+
+
+
+function asideSlider(){
+    let moveX = -75;
+    let scrollX = -75;
+    const info = document.getElementById('asideInfo');
+    const img = document.getElementById('asideImg');
+    setInterval(()=>{
+        info.style.transform= "translateX("+moveX+"vw)";
+        img.style.transform= "translateX("+moveX+"vw)";
+        if (moveX+scrollX<-75*3){
+            moveX=0;
+        }
+        else{
+            moveX+=scrollX;
+        }}, 2000)
+    }

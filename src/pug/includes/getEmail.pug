@@ -3,8 +3,8 @@ mixin getEmail(formNumber)
     .getEmail
         .getEmail__start(id='start__'+formNumber)
             form(action="#", method="get" onsubmit="getEmail("+"'"+formNumber+"'"+");"+" return false;")
-                input.getEmail__input(id="email__" + formNumber)( required, type="email", name="email" + formNumber placeholder="Введите email" oninput="inputCheck("+"'"+formNumber+"'"+");")
-                label.getEmail__label(id="label__"+formNumber for="email__" + formNumber) Введите email
+                input.getEmail__input(id="input__" + formNumber)( required, type="email", name="email" + formNumber placeholder="Введите email" oninput="inputCheck("+"'"+formNumber+"'"+");")
+                label.getEmail__label(id="label__"+formNumber for="input__" + formNumber) Введите email
                 input.getEmail__button(type="submit", value="Узнать")
             
         .getEmail__done(id='end__'+formNumber)

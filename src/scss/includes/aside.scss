@@ -1,0 +1,24 @@
+.aside__bigScreen{
+    @media screen and(max-width:$tablet) {
+        display: none;
+    }
+}
+
+.aside__slider{
+    display: none;
+    @media screen and (max-width:$tablet) {
+        display: block;
+    }
+    overflow: hidden;
+    .aside__card{
+        display: grid;
+        grid-auto-flow: column;
+        transition: all .3s ease;
+    
+    }
+    .aside__box{
+        text-align: center;
+        width: 75vw;
+    }
+}
+
