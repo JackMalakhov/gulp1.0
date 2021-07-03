@@ -35,6 +35,23 @@
         color: $text-color__link-active;
     }
 }
+.lang__button{
+    color: $dark-grey;
+    padding-left: 2%;
+}
+.lang__ru{
+    color: $blue;
+}
+.lang__en{
+    &:hover{
+        color: $light-grey;
+    }
+    &:active{
+        color: $blue;
+    }
+}
+
+
 .header__button{
     justify-self: end;
     // width: 175px;

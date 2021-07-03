@@ -13,7 +13,7 @@
       <div class="header__menu"><img class="header__logo" src="./images/header__logo.svg" alt="logo">
         <nav class="header__nav nav"><a class="page__a-nav nav__link" href="#howItWorks">Как это работает?</a><a class="page__a-nav nav__link" href="#forWhom">Для кого</a><a class="page__a-nav nav__link" href="#cases">Кейсы</a><a class="page__a-nav nav__link" href="#tarifs">Тарифы</a><a class="page__a-nav nav__link" href="#safety">Безопасность</a>
         </nav>
-        <div class="header__lang lang"><a class="page__a-normal lang__button lang__ru" href="#">RU</a><a class="page__a-normal lang__button" href="#">EN</a></div>
+        <div class="header__lang lang"><a class="page__a-normal lang__button lang__ru" href="" onclick="return false;">RU</a><a class="page__a-normal lang__button lang__en" href="" onclick="return false;">EN</a></div>
         <button class="page__a-bold header__button">Подключиться</button>
       </div>
       <div class="header__mobile mobile">
@@ -253,11 +253,11 @@
           </article>
         </div>
         <div class="cases__radio">
-          <label class="bar" id="l_0" for="r_0"> </label>
-          <label class="bar" id="l_1" for="r_1"> </label>
-          <label class="bar" id="l_2" for="r_2"> </label>
-          <label class="bar" id="l_3" for="r_3"> </label>
-          <label class="bar" id="l_4" for="r_4"> </label>
+          <label class="bar" id="l_0" for="r_0" onclick="paintDot('0');"> </label>
+          <label class="bar" id="l_1" for="r_1" onclick="paintDot('1');"> </label>
+          <label class="bar" id="l_2" for="r_2" onclick="paintDot('2');"> </label>
+          <label class="bar" id="l_3" for="r_3" onclick="paintDot('3');"> </label>
+          <label class="bar" id="l_4" for="r_4" onclick="paintDot('4');"> </label>
         </div>
       </section>
       <section class="main__tarifs tarifs main__item" id="tarifs"> 
@@ -284,32 +284,39 @@
             </div>
       </section>
       <section class="main__commingSoon commingSoon main__item"> 
-        <h2>Скоро появится</h2>
-        <article class="page__twoColls commingSoon__article">
-          <h3 class="page__h3-bigLight">Интеграции с CRM-системами Битрикс 24 и amoCRM</h3>
-          <div class="main__twoColls"> <img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
-            <p class="page__p-normal commingSoon__content">Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники </p>
-          </div>
-        </article>
-        <hr>
-        <article class="page__twoColls commingSoon__article">
-          <h3 class="page__h3-bigLight">Открытое API Everypay</h3>
-          <div class="main__twoColls"> <img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
-            <p class="page__p-normal commingSoon__content">Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay</p>
-          </div>
-        </article>
-        <hr>
-        <article class="page__twoColls commingSoon__article">
-          <h3 class="page__h3-bigLight">Автоматическое создание платежек</h3>
-          <div class="main__twoColls"> <img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
-            <p class="page__p-normal commingSoon__content">Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы</p>
-          </div>
-        </article>
-        <hr>
+        <h2>Скоро появится
+                <article class="page__twoColls commingSoon__article">
+                  <h3 class="page__h3-bigLight commingSoon__name">Интеграции с CRM-системами Битрикс 24 и amoCRM</h3>
+                  <div class="page__twoColls"><img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
+                    <div class="comming-soon__content">
+                      <p class="page__p-normal commingSoon__content">Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p><img src="./images/comming-soon__bitrix.svg" alt="bitrix"><img src="./images/comming-soon__autocrm.svg" alt="autocrm">
+                    </div>
+                  </div>
+                </article>
+                <hr>
+                <article class="page__twoColls commingSoon__article">
+                  <h3 class="page__h3-bigLight commingSoon__name">Интеграции с CRM-системами Битрикс 24 и amoCRM</h3>
+                  <div class="page__twoColls"><img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
+                    <div class="comming-soon__content">
+                      <p class="page__p-normal commingSoon__content">Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p>
+                    </div>
+                  </div>
+                </article>
+                <hr>
+                <article class="page__twoColls commingSoon__article">
+                  <h3 class="page__h3-bigLight commingSoon__name">Интеграции с CRM-системами Битрикс 24 и amoCRM</h3>
+                  <div class="page__twoColls"><img class="commingSoon__line" src="./images/comming-soon__line.svg" alt="pic">
+                    <div class="comming-soon__content">
+                      <p class="page__p-normal commingSoon__content">Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p>
+                    </div>
+                  </div>
+                </article>
+                <hr>
+        </h2>
         <h3 class="page__h3-normal">И еще 17 нововведений</h3>
       </section>
       <section class="main__safety safety main__item" id="safety">
-        <h2 class="safety__name">Безопасность</h2><img class="safety__img" src="./images/safety__locker.svg" alt="locker">
+        <h2 class="safety__name">Безопасность</h2><img class="safety__img" src="./images/safety__locker.svg" alt="locker" width="100%">
         <p class="page__p-big safety__content">
            Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только 
           для получения выписок», а хранение информации в системе защищено 

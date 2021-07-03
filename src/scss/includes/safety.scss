@@ -3,7 +3,7 @@
     grid-template-areas: "s-img s-name" "s-img s-cont";
     grid-template-rows: min-content 1fr;
     @media screen and (max-width:$tablet) {
-        grid-template-areas: "s-name s-name" "s-img s-cont";
+        grid-template-areas: "s-name s-name s-name" "s-img s-img s-cont";
     }
     @media screen and (max-width:$phone) {
         grid-template-areas: "s-name" "s-cont" "s-img";

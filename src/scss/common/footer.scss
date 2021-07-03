@@ -23,8 +23,16 @@
 
     @media screen and (max-width:$tablet)  {
         text-align: center;
+
+    }
+
+    .page__p-big{
+        @media screen and (max-width:$tablet) {
+            
+        }
     }
 }
+
 
 .footer__body{
     grid-area: f-body;

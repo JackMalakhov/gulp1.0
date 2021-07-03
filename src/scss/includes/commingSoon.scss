@@ -2,7 +2,27 @@
     align-items: start;
 }
 .commingSoon__article{
-    .main__twoColls{
-        grid-template-columns: 3vw 1fr;
+    .page__twoColls{
+        grid-template-columns: 10% 1fr;
+    }
+}
+.commingSoon__name{
+    @media screen and(max-width:$tablet) {
+        text-align: left;
+        padding-left: 15%;
+    }
+}
+.commingSoon__content{
+    @media screen and(max-width:$tablet) {
+        text-align: left;
+    }
+}
+.commingSoon__line{
+    padding-top: 2vw;
+    @media screen and (max-width:$tablet) {
+        padding-top: 4vw;
+    }
+    @media screen and (max-width:$phone) {
+        padding-top: 7vw;
     }
 }

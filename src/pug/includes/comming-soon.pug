@@ -1,12 +1,25 @@
--var cStitles = [ ,]
--var cSContent = [,]
+-var cTitles = ['Интеграции с CRM-системами Битрикс 24 и amoCRM','Открытое API Everypay','Автоматическое создание платежек']
+-var cContent = ['Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники','Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay','Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы']
+-var cImg =[]
+
+mixin cBlock(commingNumber, img)
+    article.page__twoColls.commingSoon__article
+        h3.page__h3-bigLight.commingSoon__name= cTitles[commingNumber]
+        .page__twoColls
+            img.commingSoon__line(src="./images/comming-soon__line.svg", alt="pic")
+            .comming-soon__content
+                p.page__p-normal.commingSoon__content= cContent[commingNumber]
+                if img
+                    img(src="./images/comming-soon__bitrix.svg", alt="bitrix")
+                    img(src="./images/comming-soon__autocrm.svg", alt="autocrm")
+    hr
+
+
+
+
 section.main__commingSoon.commingSoon.main__item  
     h2 Скоро появится
-    each index, value in {'Интеграции с CRM-системами Битрикс 24 и amoCRM':'Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники ','Открытое API Everypay':'Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay','Автоматическое создание платежек':'Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы'}
-        article.page__twoColls.commingSoon__article
-            h3.page__h3-bigLight= value
-            .main__twoColls 
-                img.commingSoon__line(src="./images/comming-soon__line.svg", alt="pic")
-                p.page__p-normal.commingSoon__content= index
-        hr
+        +cBlock(0,"true")
+        +cBlock(0,false)
+        +cBlock(0,false)   
     h3.page__h3-normal И еще 17 нововведений

@@ -1,27 +1,38 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
 li{
     list-style-type: none;
 }
 .HIW__item{
+    padding-left: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
     padding: 5%;
     text-align: center;
     @media screen and(max-width:$tablet) {
-        padding: 2%;
+        padding: 0%;
     }
-    .page__p-normal{
-        @media screen and (max-width:$tablet) {
-            font-size: 2vw;
-            line-height: 3vw;
-        }
-        @media screen and (max-width:$phone) {
-            font-size: 4.5vw;
-            line-height: 5.5vw;
-        }
+    // .page__p-normal{
+    //     @media screen and (max-width:$tablet) {
+    //         font-size: 2vw;
+    //         line-height: 3vw;
+    //     }
+    //     @media screen and (max-width:$phone) {
+    //         font-size: 4.5vw;
+    //         line-height: 5.5vw;
+    //     }
 
-    }
+    // }
 }
 .HIW{
     .page__threeColls {
         align-items: end;
     }
 
+}
+
+.HIW__img{
+    height: 100%;
 }

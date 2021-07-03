@@ -56,3 +56,10 @@ function showMenu(){
     }
 
 }
+function paintDot(a){
+    let dots = document.querySelectorAll('label.bar');
+    let dot = document.getElementById('l_'+a);
+    for( let i = 0; i < dots.length; i++){ 
+	    dots[i].style.background = "white"}
+    dot.style.background = 'linear-gradient(180deg, #1792C7 0%, #00B8F0 100%)';
+}

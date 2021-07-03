@@ -12,4 +12,4 @@ section.main__cases.cases.main__item#cases
                     img.cases__arrow(src="./images/cases__arrow.svg", alt="arrow")
     .cases__radio
         -for(var i = 0; i < 5; i++)
-            label.bar(id='l_'+i for='r_'+i) 
+            label.bar(id='l_'+i for='r_'+i onclick="paintDot("+"'"+i+"'"+");") 
