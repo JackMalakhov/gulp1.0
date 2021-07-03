@@ -1,0 +1,22 @@
+.forWhom__article{
+    text-align: center;
+    align-items: end;
+    .page__p-normal{
+        text-align: left;
+        @media screen and(max-width:$tablet) {
+            font-size: 1.7vw;
+            line-height: 3vw;
+        }
+        @media screen and (max-width:$phone) {
+            font-size: 3.7vw;
+            line-height: 4.7vw;
+            text-align: center;
+        }
+    }
+}
+.forWhom__content{
+    @media screen and (max-width:$phone) {
+        padding: 0 20%;
+    }
+    
+}

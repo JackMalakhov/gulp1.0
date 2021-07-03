@@ -1,0 +1,28 @@
+@import '../common/variables.scss';
+.banks__article{
+    padding: 5%;
+    border: 1px solid $banks-blue;
+
+}
+hr{
+    color:  red;
+}
+
+.banks__1c{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+.banks__item{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.banks__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    align-items: center;
+}

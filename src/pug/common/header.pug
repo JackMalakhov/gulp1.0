@@ -1,10 +1,19 @@
-header.page__header.header
+header.page__header.header#header
     .header__menu
         img.header__logo(src="./images/header__logo.svg", alt="logo")
         nav.header__nav.nav
             each value, index in {'Как это работает?':'howItWorks','Для кого':'forWhom','Кейсы':'cases','Тарифы':'tarifs','Безопасность':'safety'}
-                a.nav__link(href="#"+value)= index
+                a.page__a-nav.nav__link(href="#"+value)= index
         div.header__lang.lang
-            a.lang__button.lang__ru(href="#") RU
-            a.lang__button(href="#") EN
-        button.header__button Подключиться
+            a.page__a-normal.lang__button.lang__ru(href="#") RU
+            a.page__a-normal.lang__button(href="#") EN
+        button.page__a-bold.header__button Подключиться
+    .header__mobile.mobile
+        .mobile__menu
+            img.header__logo(src="./images/header__logo.svg", alt="logo")
+            button.mobile__btn#menuBtn(onclick="showMenu();") 
+                img(src="./images/header__menu.svg", alt="menu")
+        .mobile__drop#dropDown(onclick="showMenu();")
+            each value, index in {'Как это работает?':'howItWorks','Для кого':'forWhom','Кейсы':'cases','Тарифы':'tarifs','Безопасность':'safety',"Контакты":"footer"}
+                a.page__a-nav.nav__link(href="#"+value)= index
+            button.mobile__button Вход

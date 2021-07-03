@@ -5,15 +5,16 @@ function getEmail(a){
 }
 
 function inputCheck(a){
-    let getInput = document.getElementById('email__'+a);
+    let getInput = document.getElementById('input__'+a);
     let getlabel = document.getElementById('label__'+a);
+    // alert(getInput);
 
     if (getInput.value.length != ""){
         getlabel.style.color = 'transparent';
         
     }
     else{
-        getlabel.style.color = '#1792C7'
+        getlabel.style.color = '#1792C7';
     }
 }
 
@@ -21,17 +22,37 @@ function inputCheck(a){
 
 
 function asideSlider(){
-    let moveX = -75;
-    let scrollX = -75;
+    let moveX = -80;
+    let scrollX = -80;
     const info = document.getElementById('asideInfo');
     const img = document.getElementById('asideImg');
     setInterval(()=>{
         info.style.transform= "translateX("+moveX+"vw)";
         img.style.transform= "translateX("+moveX+"vw)";
-        if (moveX+scrollX<-75*3){
+        if (moveX+scrollX<-80*3){
             moveX=0;
         }
         else{
             moveX+=scrollX;
-        }}, 2000)
+        }}, 3000)
     }
+
+let menuShown = false;
+function showMenu(){
+    let drop = document.getElementById('dropDown')
+    let head = document.getElementById('header')
+    let page = document.body
+    if (!menuShown){
+        drop.style.display= "grid";
+        page.style.overflow = "hidden"
+        head.style.height="100%"
+        menuShown = true;
+    }
+    else{
+        drop.style.display= "none";
+        page.style.overflow = "visible"
+        head.style.height = "auto"
+        menuShown = false; 
+    }
+
+}

@@ -1,8 +1,8 @@
-section.main__HIW.HIW 
+section.main__HIW.HIW.main__item#howItWorks
     h2 Как это работает 
     ul.page__threeColls      
         each index, value in {'Подключите свой банковский счет':"how-it-works__step1","Выберите, куда и кому отправлять информацию":"how-it-works__step2","Получайте информацию о поступивших оплатах":"how-it-works__step3"} 
             li.HIW__item
-                img(src="./images/"+index+".svg", alt=index)
-                p= value
+                img.HIW__img(src="./images/"+index+".svg", alt=index)
+                p.page__p-normal= value
         

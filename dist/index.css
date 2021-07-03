@@ -1,48 +1,48 @@
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("AvenirNextCyr-Regular.woff2") format("woff2"), url("AvenirNextCyr-Regular.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("fonts/AvenirNextCyr-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Thin"), local("AvenirNextCyr-Thin"), url("AvenirNextCyr-Thin.woff2") format("woff2"), url("AvenirNextCyr-Thin.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Thin.woff2") format("woff2"), url("fonts/AvenirNextCyr-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Ultra Light"), local("AvenirNextCyr-UltraLight"), url("AvenirNextCyr-UltraLight.woff2") format("woff2"), url("AvenirNextCyr-UltraLight.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-UltraLight.woff2") format("woff2"), url("fonts/AvenirNextCyr-UltraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Light"), local("AvenirNextCyr-Light"), url("AvenirNextCyr-Light.woff2") format("woff2"), url("AvenirNextCyr-Light.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("fonts/AvenirNextCyr-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("AvenirNextCyr-Medium.woff2") format("woff2"), url("AvenirNextCyr-Medium.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("fonts/AvenirNextCyr-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.woff2") format("woff2"), url("AvenirNextCyr-Demi.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("fonts/AvenirNextCyr-Demi.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("AvenirNextCyr-Bold.woff2") format("woff2"), url("AvenirNextCyr-Bold.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("fonts/AvenirNextCyr-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"), url("AvenirNextCyr-Heavy.woff2") format("woff2"), url("AvenirNextCyr-Heavy.woff") format("woff");
+  src: url("fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("fonts/AvenirNextCyr-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -57,25 +57,88 @@
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  padding: 35px 170px;
+  width: 75%;
+  margin: 35px auto;
+  grid-template-columns: max-content 6fr 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 
-.nav .nav__link {
+.nav {
+  text-align: center;
+}
+
+.nav__link {
+  padding: 1%;
   transition: all 0.3s ease;
   color: #555E68;
 }
-.nav .nav__link:hover {
+.nav__link:hover {
   color: rgba(85, 94, 104, 0.5);
 }
-.nav .nav__link:active {
+.nav__link:active {
   color: #1792C7;
 }
 
 .header__button {
-  width: 175px;
+  justify-self: end;
+  padding: 10%;
   background-color: #FFFFFF;
   color: #1792c7;
   border: 1px solid #1792c7;
+}
+
+.header__mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header__mobile {
+    display: block;
+  }
+}
+
+.mobile__menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  grid-template-columns: max-content;
+  align-items: center;
+  width: 75%;
+  margin: 30px auto;
+}
+@media screen and (max-width: 500px) {
+  .mobile__menu {
+    margin: 25px auto;
+  }
+}
+
+.mobile__btn {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s ease;
+}
+.mobile__btn:active {
+  transform: translateY(-5px);
+  transform: translateY(5px);
+}
+
+.mobile__drop {
+  height: 70vh;
+  display: none;
+  justify-items: center;
+  padding: 10%;
+  align-content: space-between;
+}
+
+.mobile__button {
+  padding: 2% 5%;
+  background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+  color: #FFFFFF;
 }
 
 .getEmail {
@@ -109,7 +172,7 @@
 .getEmail__label {
   position: absolute;
   left: 0px;
-  padding-top: 18px;
+  padding-top: 15px;
   padding-left: 30px;
   color: #1792C7;
 }
@@ -124,33 +187,22 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .aside__bigScreen {
-    display: none;
-  }
-}
-
-.aside__slider {
-  display: none;
-  overflow: hidden;
-}
-@media screen and (max-width: 768px) {
-  .aside__slider {
-    display: block;
-  }
-}
-.aside__slider .aside__card {
-  display: grid;
-  grid-auto-flow: column;
-  transition: all 0.3s ease;
-}
-.aside__slider .aside__box {
+.getEmail__show {
   text-align: center;
-  width: 75vw;
 }
 
 .offer {
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .offer__body {
+    order: -10;
+    text-align: left;
+  }
+}
+.offer__body .offer__name {
+  text-align: left;
 }
 
 .autoBiz {
@@ -158,8 +210,67 @@
   background-color: #E8F4F7;
 }
 
+@media screen and (max-width: 768px) {
+  .autoBiz__body {
+    text-align: center;
+  }
+}
+
+.forWhom__article {
+  text-align: center;
+  align-items: end;
+}
+.forWhom__article .page__p-normal {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .forWhom__article .page__p-normal {
+    font-size: 1.7vw;
+    line-height: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .forWhom__article .page__p-normal {
+    font-size: 3.7vw;
+    line-height: 4.7vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .forWhom__content {
+    padding: 0 20%;
+  }
+}
+
 li {
   list-style-type: none;
+}
+
+.HIW__item {
+  padding: 5%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .HIW__item {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .HIW__item .page__p-normal {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .HIW__item .page__p-normal {
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+  }
+}
+
+.HIW .page__threeColls {
+  align-items: end;
 }
 
 .cases__body {
@@ -167,7 +278,7 @@ li {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 2%;
-  width: 100%;
+  width: 75vw;
   overflow: hidden;
 }
 .cases__body input[name=rad] {
@@ -176,21 +287,23 @@ li {
 }
 
 .cases__article {
-  width: 346px;
-  height: 297px;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: row;
+  align-content: space-between;
+  align-items: center;
+  width: 24vw;
   border: 1px solid rgba(56, 152, 254, 0.187528);
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   .cases__article {
     width: 319px;
-    height: 287px;
   }
 }
 @media screen and (max-width: 500px) {
   .cases__article {
     width: 222px;
-    height: 213px;
   }
 }
 .cases__article:hover {
@@ -201,10 +314,11 @@ li {
 .cases__item {
   transition: all 0.3s ease;
   padding: 10%;
+  align-self: end;
 }
 @media screen and (max-width: 500px) {
   .cases__item {
-    padding: 2%;
+    padding: 10%;
   }
 }
 
@@ -237,6 +351,10 @@ li {
 }
 .bar:active, .bar:hover {
   background-color: #1792C7;
+}
+
+.cases__img {
+  width: 70%;
 }
 
 @media screen and (max-width: 768px) {
@@ -327,9 +445,42 @@ li {
   grid-area: s-cont;
 }
 
+.banks__article {
+  padding: 5%;
+  border: 1px solid rgba(56, 152, 254, 0.187528);
+}
+
+hr {
+  color: red;
+}
+
+.banks__1c {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.banks__item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.banks__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
 .page__main {
   width: 75%;
   margin: 0 auto;
+}
+
+.main__item {
+  padding-top: 15%;
 }
 
 .page__footer {
@@ -360,6 +511,11 @@ li {
 
 .footer__info {
   grid-area: f-info;
+}
+@media screen and (max-width: 768px) {
+  .footer__info {
+    text-align: center;
+  }
 }
 
 .footer__body {
@@ -442,6 +598,41 @@ li {
   color: rgba(56, 152, 254, 0.3);
 }
 
+.page__aside {
+  padding-top: 150px;
+}
+
+.aside__bigScreen {
+  width: 75%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .aside__bigScreen {
+    display: none;
+  }
+}
+
+.aside__slider {
+  display: none;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .aside__slider {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.aside__slider .aside__card {
+  display: grid;
+  grid-auto-flow: column;
+  transition: all 0.3s ease;
+}
+.aside__slider .aside__box {
+  text-align: center;
+  width: 80vw;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -450,6 +641,8 @@ body {
   margin: 0;
   color: #2D3238;
   font-family: "Avenir Next";
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -464,10 +657,162 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  padding-bottom: 5%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vw;
+  line-height: 3vw;
+}
 @media screen and (max-width: 768px) {
   h2 {
     text-align: center;
+    font-size: 6.4vw;
+    line-height: 6.4vw;
+    letter-spacing: 0.8px;
   }
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 6.6vw;
+    line-height: 6.6vw;
+  }
+}
+
+.page__h3-big {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  letter-spacing: 0.44px;
+}
+@media screen and (max-width: 768px) {
+  .page__h3-big {
+    font-size: 3.6vw;
+    line-height: 4vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page__h3-big {
+    font-size: 7.2vw;
+    line-height: 8vw;
+  }
+}
+
+.page__h3-normal {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  letter-spacing: 0.44px;
+}
+@media screen and (max-width: 768px) {
+  .page__h3-normal {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page__h3-normal {
+    font-size: 3.4vw;
+    line-height: 3.4vw;
+  }
+}
+
+.page__h3-bigLight {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.44px;
+}
+
+.page__h3-banks {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.443077px;
+  color: rgba(56, 152, 254, 0.5);
+}
+
+.page__p-normal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+}
+@media screen and (max-width: 768px) {
+  .page__p-normal {
+    font-size: 3.2vw;
+    line-height: 4vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page__p-normal {
+    font-size: 5vw;
+    line-height: 7.2vw;
+  }
+}
+
+.page__p-big {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  letter-spacing: 0.713846px;
+}
+@media screen and (max-width: 768px) {
+  .page__p-big {
+    font-size: 2.05vw;
+    line-height: 2.8vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page__p-big {
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+  }
+}
+
+.page__a-nav {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.96px;
+}
+
+.page__a-bold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.369231px;
+}
+
+.page__a-normal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.369231px;
+}
+
+.page__input-normal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.96px;
+}
+
+.page__input-bold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.443077px;
 }
 
 button, input[type=submit] {
@@ -499,5 +844,6 @@ button:hover, input[type=submit]:hover {
 @media screen and (max-width: 500px) {
   .page__threeColls {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 }

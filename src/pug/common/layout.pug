@@ -7,9 +7,13 @@ html(lang="ru")
         title Everypay
         link(rel="stylesheet", href="index.css")
         script(src="main.js") 
-    body.page 
+    body.page(onload="asideSlider();") 
         block header
             include header 
+        include ../includes/getEmail
+        include ../includes/aside
+        
+        
         block main
 
 

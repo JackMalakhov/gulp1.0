@@ -29,7 +29,7 @@
 .getEmail__label{
     position: absolute;
     left: 0px;
-    padding-top: 18px;
+    padding-top: 15px;
     padding-left: 30px;
     color: $text-blue;
 }
@@ -41,4 +41,8 @@
 
 .getEmail__done{
     display: none;
+}
+
+.getEmail__show{
+    text-align: center;
 }

@@ -1,4 +1,9 @@
+.page__aside{
+    padding-top: 150px;
+}
 .aside__bigScreen{
+    width: 75%;
+    margin: 0 auto;
     @media screen and(max-width:$tablet) {
         display: none;
     }
@@ -8,6 +13,8 @@
     display: none;
     @media screen and (max-width:$tablet) {
         display: block;
+        width: 80%;
+        margin: 0 auto;
     }
     overflow: hidden;
     .aside__card{
@@ -18,7 +25,8 @@
     }
     .aside__box{
         text-align: center;
-        width: 75vw;
+        width: 80vw;
+
     }
 }
 

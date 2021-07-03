@@ -3,3 +3,8 @@
     padding: 10%;
     background-color: $back-color__autobiz;
 }
+.autoBiz__body{
+    @media screen and (max-width:$tablet) {
+        text-align: center;
+    }
+}

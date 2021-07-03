@@ -1,20 +1,29 @@
-section.main__banks.banks
+section.main__banks.banks.main__item
     h2 Банки и интеграции
     .page__twoColls
-        .banks__box 
-            p Банки
-            img(src="./images/banks__tochka.svg", alt="tochka-bank")
-            img(src="./images/banks__tinkoff.svg", alt="tinkoff-bank")
-            img(src="./images/banks__modul.svg", alt="modul-bank")
+        article.banks__article.banks_b 
+            h3.page__h3-banks.banks__name Банки
+            .banks__box
+                img(src="./images/banks__tochka.svg", alt="tochka-bank")
+                img(src="./images/banks__tinkoff.svg", alt="tinkoff-bank")
+                img(src="./images/banks__modul.svg", alt="modul-bank")
             hr
-            img(src="./images/banks__plus.svg", alt="plus")
-            img(src="./images/banks__csv.svg", alt="csvc")
-            p Загрузка из 1С
-        .banks__box 
-            p Интеграции
-            img(src="./images/banks__bell.svg", alt="bell")
-            p Push-web уведомления
-            img(src="./images/banks__mail.svg", alt="mail")
-            p E-mail уведомления
-            img(src="./images/banks__telegram.svg", alt="telegram")
-            p Telegram
+            
+            figure.banks__1c 
+                img(src="./images/banks__plus.svg", alt="plus")
+                img(src="./images/banks__csv.svg", alt="csvc")
+                p.page__p-normal Загрузка из 1С
+        article.banks__article.banks_i 
+            h3.page__h3-banks.banks__name Интеграции
+            
+            figure.banks__item 
+                img(src="./images/banks__bell.svg", alt="bell" width="100%")
+                p.page__p-normal Push-web уведомления
+           
+            figure.banks__item 
+                img(src="./images/banks__mail.svg", alt="mail" width="100%")
+                p.page__p-normal E-mail уведомления
+            
+            figure.banks__item 
+                img(src="./images/banks__telegram.svg", alt="telegram" width="100%")
+                p.page__p-normal Telegram

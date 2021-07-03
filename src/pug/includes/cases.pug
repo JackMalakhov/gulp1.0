@@ -1,4 +1,4 @@
-section.main__cases.cases  
+section.main__cases.cases.main__item#cases  
     h2.cases__header Кейсы
     
     .cases__body
@@ -6,9 +6,9 @@ section.main__cases.cases
             input(id='r_'+i, type="radio", name="rad")
         each value, index in {'Автоматизация диджитал-агентства':'cases__1','Приём платежей в рекламной медиа-группе':'cases__2','Оптимизация бухгалтерии в производственной компании':'cases__3'}
             article.cases__article(class=value)
-                img.cases__item(src="./images/"+value+'.svg', alt=value)
-                h3.cases__item= index
-                a.cases__link.cases__item(href="")  Читать кейс
+                img.cases__item.cases__img(src="./images/"+value+'.svg', alt=value )
+                h3.page__h3-normal.cases__item= index
+                a.page__a-bold.cases__link.cases__item(href="")  Читать кейс
                     img.cases__arrow(src="./images/cases__arrow.svg", alt="arrow")
     .cases__radio
         -for(var i = 0; i < 5; i++)

@@ -6,7 +6,7 @@
     grid-auto-flow: column;
     grid-column-gap: 2%;
     // padding-right: 100px;
-    width: 100%;
+    width: 75vw;
     overflow: hidden;
     input[name=rad]{
         position: absolute;
@@ -14,21 +14,24 @@
     }
 }
 .cases__article{
-    
-    width: 346px;
-    height: 297px;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: space-between;
+    align-items: center;
+    width: 24vw;
     @media screen and (max-width: $tablet) {
         width: 319px;
-        height: 287px;
+        // height: 287px;
         
     }
     @media screen and (max-width: $phone) {
         width: 222px;
-        height: 213px;
+        // height: 213px;
         
     }
     border: 1px solid rgba(56, 152, 254, 0.187528);
-    transition: all .6s ease;
+    transition: all .3s ease;
     
     &:hover{
         background-color: $highlight-white;
@@ -39,8 +42,9 @@
     transition: all .3s ease;
     padding: 10%;
     @media screen and(max-width:$phone) {
-        padding: 2%
+        padding: 10%
     }
+    align-self: end;
 }
 .cases__link{
     // text-align: left;
@@ -74,6 +78,10 @@
     &:active,&:hover{
         background-color:$text-blue;
     }        
+}
+
+.cases__img{
+    width: 70%;
 }
 
 

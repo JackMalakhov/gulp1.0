@@ -1,8 +1,9 @@
-@import '../assets/fonts/AvenirNext';
+@import 'AvenirNext';
 @import './common/variables.scss';
 @import './common/header.scss';
 @import './common/main.scss';
 @import './common/footer.scss';
+@import 'includes/aside.scss';
 
 
 html{
@@ -13,6 +14,8 @@ body{
     margin: 0;
     color:$text-color;
     font-family:'Avenir Next';
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -28,10 +31,139 @@ a{
 }
 
 h2{
+    padding-bottom: 5%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 3vw;
     @media screen and (max-width:$tablet) {
         text-align: center;
+        font-size: 6.4vw;
+        line-height: 6.4vw;
+        letter-spacing: 0.8px;
+    }
+    @media screen and (max-width:$phone) {
+        font-size: 6.6vw;
+        line-height: 6.6vw;
     }
 }
+.page__h3-big{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8vw;
+    line-height: 2vw;  
+    letter-spacing: 0.44px;
+    @media screen and (max-width:$tablet) {
+        font-size: 3.6vw;
+        line-height: 4vw;
+    }
+    @media screen and (max-width:$phone) {
+        font-size: 7.2vw;
+        line-height: 8vw;
+    }
+}
+.page__h3-normal{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.44px;
+    @media screen and (max-width:$tablet) {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    @media screen and (max-width:$phone) {
+        font-size: 3.4vw;
+        line-height: 3.4vw;
+    }
+}
+.page__h3-bigLight{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.44px;
+}
+
+.page__h3-banks{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.443077px;
+    color: $transparency-blue;
+
+}
+
+.page__p-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    line-height: 1.9vw;
+    @media screen and (max-width:$tablet) {
+        font-size: 3.2vw;
+        line-height: 4vw;
+    }
+    @media screen and (max-width:$phone) {
+        font-size: 5vw;
+        line-height: 7.2vw;
+    }
+
+}
+.page__p-big{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.713846px;
+    @media screen and(max-width:$tablet) {
+        font-size:2.05vw;
+        line-height: 2.8vw;
+    }
+    @media screen and(max-width:$phone) {
+        font-size: 4.5vw;
+        line-height: 4.5vw;
+    }
+}
+
+.page__a-nav{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.96px;
+}
+.page__a-bold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.369231px;
+}
+.page__a-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.369231px;
+}
+
+.page__input-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+}
+.page__input-bold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.443077px;
+}
+
+
 
 button, input[type=submit]{
     padding: 13px 0;
@@ -58,6 +190,7 @@ button, input[type=submit]{
     grid-column-gap: 5%;
 
     @media screen and (max-width:$phone) {
-        grid-template-columns:1fr
+        grid-template-columns:1fr;
+        text-align: center;
     }
 }

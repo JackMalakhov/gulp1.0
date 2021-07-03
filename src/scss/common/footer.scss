@@ -20,6 +20,10 @@
 }
 .footer__info{
     grid-area: f-info;
+
+    @media screen and (max-width:$tablet)  {
+        text-align: center;
+    }
 }
 
 .footer__body{

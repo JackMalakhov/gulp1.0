@@ -1,5 +1,4 @@
 mixin getEmail(formNumber)
-    //- script(src=("../../js/check.js"))
     .getEmail
         .getEmail__start(id='start__'+formNumber)
             form(action="#", method="get" onsubmit="getEmail("+"'"+formNumber+"'"+");"+" return false;")
@@ -9,6 +8,8 @@ mixin getEmail(formNumber)
             
         .getEmail__done(id='end__'+formNumber)
             
-            p Проверьте e-mail!
-            img(src="./images/get-email__done.svg", alt="done! ") 
+            p.getEmail__show 
+                img(src="./images/get-email__done.svg", alt="done! ")
+                p.page__p-normal Проверьте e-mail!
+                 
         

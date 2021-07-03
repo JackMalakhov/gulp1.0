@@ -17,7 +17,7 @@ function html(){
             pretty: true
         }))
         .pipe(htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
         .pipe(dest('dist'))
 }

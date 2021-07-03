@@ -1,3 +1,27 @@
 li{
     list-style-type: none;
 }
+.HIW__item{
+    padding: 5%;
+    text-align: center;
+    @media screen and(max-width:$tablet) {
+        padding: 2%;
+    }
+    .page__p-normal{
+        @media screen and (max-width:$tablet) {
+            font-size: 2vw;
+            line-height: 3vw;
+        }
+        @media screen and (max-width:$phone) {
+            font-size: 4.5vw;
+            line-height: 5.5vw;
+        }
+
+    }
+}
+.HIW{
+    .page__threeColls {
+        align-items: end;
+    }
+
+}
