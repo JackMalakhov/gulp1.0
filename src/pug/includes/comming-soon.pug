@@ -7,7 +7,7 @@ mixin cBlock(commingNumber, img)
         h3.page__h3-bigLight.commingSoon__name= cTitles[commingNumber]
         .page__twoColls
             img.commingSoon__line(src="./images/comming-soon__line.svg", alt="pic")
-            .comming-soon__content
+            .commingSoon__content
                 p.page__p-normal.commingSoon__content= cContent[commingNumber]
                 if img
                     img(src="./images/comming-soon__bitrix.svg", alt="bitrix")
@@ -19,7 +19,7 @@ mixin cBlock(commingNumber, img)
 
 section.main__commingSoon.commingSoon.main__item  
     h2 Скоро появится
-        +cBlock(0,"true")
-        +cBlock(0,false)
-        +cBlock(0,false)   
+    +cBlock(0,"img")
+    +cBlock(0)
+    +cBlock(0)   
     h3.page__h3-normal И еще 17 нововведений

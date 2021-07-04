@@ -14,10 +14,9 @@ const sync = require('browser-sync').create()
 function html(){
     return src('src/pug/index.pug')
         .pipe(pug({
-            pretty: true
         }))
         .pipe(htmlmin({
-            collapseWhitespace: false
+            collapseWhitespace: true
         }))
         .pipe(dest('dist'))
 }
@@ -25,8 +24,8 @@ function html(){
 function scss(){
     return src('src/scss/style.scss')
         .pipe(sass())
-        // .pipe(autoprefixer())
-        // .pipe(csso())
+        .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(concat('index.css'))
         .pipe(dest('dist'))
 }
@@ -64,3 +63,4 @@ function serve(){
 exports.build = series(clear, scss, html, js, img, fonts)
 exports.serve = series(clear, scss, html, js, img, fonts, serve)
 // exports.scss = scss
+

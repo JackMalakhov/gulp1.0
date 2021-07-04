@@ -14,6 +14,12 @@
     @media screen and (max-width:$phone) {
         grid-template-areas: "f-name" "f-info" "f-body" "f-policy" "f-date";
     }
+
+    .page__p-normal{
+        @media screen and (max-width:$phone) {
+            font-size: 3vw;
+        }
+    }
 }
 .footer__name{
     grid-area: f-name;
@@ -28,7 +34,8 @@
 
     .page__p-big{
         @media screen and (max-width:$tablet) {
-            
+            font-size: 3vw;
+            line-height: 3.5vw;
         }
     }
 }
@@ -98,24 +105,15 @@
     resize: none;
     padding-left: 15px;
     padding-top: 15px;
+    margin-bottom: 20px;
 }
 .footer__button{
     width: 175px;
     background: $gradient-blue;
     color: $highlight-white;
+    margin-bottom: 20px;
 }
-// .footer__policy{
-//     align-items: center;
-// }
 
-
-// .policy__c{
-//     font-family: Montserrat;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 8px;
-//     line-height: 10px;
-// }
 .info__email{
     color: $transparency-blue-3
 }

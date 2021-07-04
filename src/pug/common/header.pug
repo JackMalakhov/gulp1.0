@@ -13,7 +13,7 @@ header.page__header.header#header
             img.header__logo(src="./images/header__logo.svg", alt="logo")
             button.mobile__btn#menuBtn(onclick="showMenu();") 
                 img(src="./images/header__menu.svg", alt="menu")
-        .mobile__drop#dropDown(onclick="showMenu();")
+        .mobile__drop.nav#dropDown(onclick="showMenu();")
             each value, index in {'Как это работает?':'howItWorks','Для кого':'forWhom','Кейсы':'cases','Тарифы':'tarifs','Безопасность':'safety',"Контакты":"footer"}
                 a.page__a-nav.nav__link(href="#"+value)= index
             button.mobile__button Вход

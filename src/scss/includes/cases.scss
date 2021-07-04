@@ -47,8 +47,12 @@
     align-self: end;
 }
 .cases__link{
-    // text-align: left;
     color:$text-blue;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    grid-column-gap: 2%;
 }
 
 .cases__radio{
