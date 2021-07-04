@@ -3,4 +3,4 @@ use
 
     npm run build 
     
-to build project
+to build the project
