@@ -11,6 +11,9 @@
 
 .page__main{
     width: 75%;
+    // @media screen and (max-width:$phone) {
+    //     width: 100%;
+    // }
     margin: 0 auto;
 }
 .main__item{
